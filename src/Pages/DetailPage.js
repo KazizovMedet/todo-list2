@@ -6,7 +6,9 @@ const DetailPage = () => {
   return (
     <div>
       <Header/>
-      Detail page
+      <div className={'container'}>
+        Detail page
+      </div>
     </div>
   );
 };
