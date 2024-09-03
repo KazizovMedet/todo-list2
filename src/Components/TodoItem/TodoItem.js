@@ -17,13 +17,13 @@ const TodoItem = ({todo}) => {
         'd-flex align-items-center ' +
         'justify-content-between ' +
         'mt-3 border border-secondary ' +
-        'p-4 rounded'
+        'p-3 rounded'
       }
     >
       <h2>{todo.title}</h2>
       <div className={'d-flex align-items-center'}>
         <p>{todo.completed ? 'Completed' : 'In progress'}</p>
-        <img style={{width: '155px', objectFit: 'contain', margin: '0 20px'}} src={todo.asset} alt=""/>
+        <img style={{width: '160px', objectFit: 'contain', margin: '0 20px'}} src={todo.asset} alt=""/>
         <button
           onClick={() => setIsOpen(!isOpen)}
           className={'btn btn-warning ms-4'}>Edit

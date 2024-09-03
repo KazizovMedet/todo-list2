@@ -25,12 +25,12 @@ const HomePage = () => {
   return (
     <div>
       <Header />
-      <div style={{width: '750px', margin: '15px auto'}}>
+      <div style={{width: '750px', margin: '12px auto'}}>
         {isShowForm ?
           <form onSubmit={handleSubmit((data) => handleSubmitForm(data))}>
             <button
               onClick={() => setIsShowForm(false)}
-              style={{margin: '0 0 30px auto', display: 'block'}}
+              style={{margin: '0 0 25px auto', display: 'block'}}
               className={'btn btn-danger mb-3'}>X</button>
             <div className={'d-flex gap-2 mb-3'}>
               <input
