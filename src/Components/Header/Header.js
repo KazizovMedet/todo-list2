@@ -13,7 +13,7 @@ const Header = () => {
         <Link to={'/'}>Logo from Medets Team!!!</Link>
       </h2>
       <nav>
-        <Link to={'/'}>Home</Link>
+        <Link to={'/'}>Come to Home baby</Link>
         <Link to={'/users'}>Users</Link>
         {!isAuth() ?
           <>

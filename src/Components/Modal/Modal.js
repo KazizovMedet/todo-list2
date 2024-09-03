@@ -41,7 +41,7 @@ const Modal = ({todoData, setIsOpen}) => {
             type="checkbox"
           />
           {/*<input className={'form-control'} type="file"/>*/}
-          <button className={'btn btn-primary'}>Save Changes</button>
+          <button className={'btn btn-primary'}>Save Big Changes</button>
           <img style={{maxHeight: '220px', width: '100%', objectFit: 'contain'}} src={edit.asset} alt=""/>
         </form>
       </div>
