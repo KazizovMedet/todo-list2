@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <header>
       <h2>
-        <Link to={'/'}>Logo to home Page</Link>
+        <Link to={'/'}>Logo from Medets Team!!!</Link>
       </h2>
       <nav>
         <Link to={'/'}>Home</Link>
