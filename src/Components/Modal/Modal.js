@@ -8,6 +8,13 @@ const Modal = ({todoData, setIsOpen}) => {
   const [edit, setEdit] = useState({})
   const dispatch = useDispatch()
 
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    dispatch(editTodo(edit))
+    setIsOpen(false)
+  }
+
   useEffect(() => {
     if (todo?.id){
       setEdit(todo)
@@ -17,12 +24,6 @@ const Modal = ({todoData, setIsOpen}) => {
   useEffect(() => {
     dispatch(getTodo(todoData.id))
   }, [todoData.id]);
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    dispatch(editTodo(edit))
-    setIsOpen(false)
-  }
 
   return (
     <div className={'custom-modal'}>
@@ -39,7 +40,7 @@ const Modal = ({todoData, setIsOpen}) => {
             type="checkbox"
           />
           {/*<input className={'form-control'} type="file"/>*/}
-          <button className={'btn btn-primary'}>Save</button>
+          <button className={'btn btn-primary'}>save changes</button>
           <img style={{maxHeight: '220px', width: '100%', objectFit: 'contain'}} src={edit.asset} alt=""/>
         </form>
       </div>

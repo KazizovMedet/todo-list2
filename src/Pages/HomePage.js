@@ -25,19 +25,19 @@ const HomePage = () => {
   return (
     <div>
       <Header />
-      <div style={{width: '750px', margin: '10px auto'}}>
+      <div style={{width: '750px', margin: '12px auto'}}>
         {isShowForm ?
           <form onSubmit={handleSubmit((data) => handleSubmitForm(data))}>
             <button
               onClick={() => setIsShowForm(false)}
-              style={{margin: '0 0 20px auto', display: 'block'}}
+              style={{margin: '0 0 25px auto', display: 'block'}}
               className={'btn btn-danger mb-3'}>X</button>
             <div className={'d-flex gap-2 mb-3'}>
               <input
                 {...register("title")}
                 className={'form-control'}
               />
-              <button type={'submit'} className={'btn btn-primary'}>Add</button>
+              <button type={'submit'} className={'btn btn-primary'}>add todos</button>
             </div>
             <input onChange={(e) => handleUploadImage(e, setAssetUrl)} type="file"/>
           </form>
