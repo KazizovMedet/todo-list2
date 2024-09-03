@@ -24,3 +24,13 @@ code {
   width: 100%;
   margin: 0 auto;
 }
+
+.sign-in-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    gap: 20px;
+margin: 30px auto;
+}
