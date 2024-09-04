@@ -34,7 +34,7 @@ export const getMyUser = () => {
       }
     })
       .then(({data}) => {
-        Cookies.set('user', JSON.stringify(data))
+        localStorage.setItem('user', JSON.stringify(data))
         dispatch({type: GET_USER, payload: data})
         history.push('/')
       })
