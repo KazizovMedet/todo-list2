@@ -37,7 +37,7 @@ const HomePage = () => {
                 {...register("title")}
                 className={'form-control'}
               />
-              <button type={'submit'} className={'btn btn-success'}>Add Todo</button>
+              <button type={'submit'} className={'btn btn-success'}>Add todo</button>
             </div>
             <input onChange={(e) => handleUploadImage(e, setAssetUrl)} type="file"/>
           </form>
