@@ -29,7 +29,7 @@ const App = () => {
       <Route
         path="/"
         element={
-          <ProtectedRoute isAuth={true} children={<HomePage/>}/>
+          <ProtectedRoute isAuth={isAuth()} children={<HomePage/>}/>
         }
       />
       <Route path="/users" element={<UserPage/>}/>
