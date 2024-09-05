@@ -12,7 +12,7 @@ export const getUsers = () => {
 
 export const registerUser = (newUser) => {
   return dispatch => {
-    axios.post('https://kamil123456780.pythonanywhere.com/api/register/', newUser)
+    axios.post('https://capr11.pythonanywhere.com/api/register/', newUser)
       .then(({data}) => history.push('/sign-in'))
   }
 }
@@ -27,7 +27,7 @@ export const logoutUser = () => {
 export const getMyUser = () => {
   const token = Cookies.get('token')
   return dispatch => {
-    axios.get('https://kamil123456780.pythonanywhere.com/api/profile/', {
+    axios.get('https://capr11.pythonanywhere.com/api/profile/', {
       withCredentials: true,
       headers: {
         Authorization: `Bearer ${token}`
@@ -44,7 +44,7 @@ export const getMyUser = () => {
 
 export const signIn = (data) => {
   return dispatch => {
-    axios.post('https://kamil123456780.pythonanywhere.com/api/login/', data)
+    axios.post('https://capr11.pythonanywhere.com/api/login/', data)
       .then(({data}) => {
         Cookies.set('token', data.access)
         localStorage.setItem('token', data.access)
